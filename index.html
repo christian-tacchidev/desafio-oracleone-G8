@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo de Amigo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorteo de Amigo</h1>
+        
+        <!-- Solicitar nombre del participante -->
+        <div class="participant-section">
+            <input type="text" id="participantNameInput" placeholder="Ingresa tu nombre">
+            <button id="startButton">Comenzar</button>
+        </div>
+        <p id="participantMessage" class="participant-message"></p> <!-- Mensaje de bienvenida -->
+        
+        <!-- Sección principal del juego -->
+        <div id="gameSection" class="hidden"> <!-- Ocultamos al principio -->
+            <div class="input-section">
+                <input type="text" id="nameInput" placeholder="Ingresa un nombre para el sorteo">
+                <button id="addButton">Adicionar</button>
+            </div>
+            <p id="errorMessage" class="error-message"></p> <!-- Mensaje de error -->
+            <h2>Lista de nombres</h2>
+            <ul id="nameList"></ul>
+            <button id="drawButton">Sortear Amigo</button>
+            <h2 id="resultDisplay" class="result"></h2>
+            <div class="button-group">
+                <button id="restartButton" class="secondary-button">Reiniciar</button>
+                <button id="exitButton" class="secondary-button">Salir</button>
+            </div>
+            <p id="farewellMessage" class="farewell-message"></p> <!-- Mensaje de despedida -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
